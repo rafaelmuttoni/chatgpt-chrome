@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Injector</title>
+    <style>
+      /* Add custom styles for your popup window here */
+      body {
+  background-color: #fff;
+  color: #333;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+  width: 600px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: decimal;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #0078d7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+bold {
+  font-weight: bold;
+  color: #18BD9D;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Search any app from Chrome's search bar</h1>
+    <ol>
+      <li>To get started, open Chrome's settings by clicking the three dots at top-right.</li>
+      <li>Click "Search engine" then "Manage search engines", or go directly to <bold>chrome://settings/searchEngines</bold>.</li>
+      <li>From here, you can add new search engines.</li>
+      <li>On the modal, add a name (ex.: ChatGPT).</li>
+      <li>Add a shortcut (ex.: gpt) which is what you're going to type on the tab bar to activate the search.</li>
+      <li>And the URL: <bold>https://chat.openai.com/?text=%s</bold> or <bold>https://chat.openai.com/?model=gpt-4&text=%s</bold> if you want to use GPT 4.</li>
+    </ol>
+    <p>For more detailed instructions, please see the <a href="https://support.google.com/chrome/answer/95426">official Google support article</a>.</p>
+  </body>
+</html>
